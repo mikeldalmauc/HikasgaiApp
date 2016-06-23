@@ -110,7 +110,7 @@ class MeGustaTarea(models.Model):
     valorador = models.ForeignKey(User)
     tarea = models.ForeignKey(Tarea)
     def __str__(self):
-        return self.Tarea.titulo
+        return self.tarea.titulo
 
 class Comentario(models.Model):
     contenido = models.CharField(max_length=140)
@@ -119,7 +119,7 @@ class Comentario(models.Model):
     puntuacion = models.IntegerField(default=0)
     creador = models.ForeignKey(User)
     def __str__(self):
-        return self.User.username
+        return self.contenido
 
 class MeGustaComentario(models.Model):
     valor = models.IntegerField(default=0)

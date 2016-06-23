@@ -30,8 +30,6 @@ class PerfilTestCase(TestCase):
 		perfil = Perfil.objects.get(usuario=User.objects.get(username="david"))
 		self.assertIsInstance(perfil.nacimiento, datetime.date)	
 		
-	def test_avatar(self):
-		pass
 
 	def test_fechaRegistro(self):
 		perfil = Perfil.objects.get(usuario=User.objects.get(username="david"))
@@ -60,7 +58,7 @@ class ProfesorTestCase(TestCase):
 	def setUp(self):
 		user = User.objects.create_user(username='xabin', email='graeh@euskaltel.net', password='password')
 		Profesor.objects.create(usuario=user, genero='M', nacimiento='1996-05-15', rango='B', despacho=107)
-		
+
 
 	def test_instancia(self):
 		profesor1=Profesor.objects.get(usuario=User.objects.get(username='xabin'))
@@ -102,7 +100,7 @@ class ContactoWebTestCase(TestCase):
 	def setUp(self):
 		user = User.objects.create_user(username='arlet', email='graeh@euskaltel.net', password='password')
 		ContactoWeb.objects.create(nombre="Porrusald", url='http://xvideos.com', usuario=user)
-		print user.username
+		#print user.username
 
 	def test_instancia(self):
 		cweb = ContactoWeb.objects.get(usuario=User.objects.get(username='arlet'))
@@ -113,9 +111,9 @@ class ContactoWebTestCase(TestCase):
 		self.assertIsInstance(cweb.nombre, basestring)
 		self.assertEqual(cweb.nombre,str(cweb.nombre))
 
-	def test_url(self):
-		pass
-		#cweb = ContactoWeb.objects.get(usuario=User.objects.get(username='arlet'))
+	#def test_url(self):
+	#	pass
+	#	cweb = ContactoWeb.objects.get(usuario=User.objects.get(username='arlet'))
 
 	def test_usuario(self):
 		cweb = ContactoWeb.objects.get(usuario=User.objects.get(username='arlet'))
