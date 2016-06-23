@@ -22,14 +22,14 @@ class Perfil(models.Model):
     gmail_regex = RegexValidator(regex=r'(^[a-zA-Z0-9_.+-]+@gmail.com+$)', message="Tiene que ser una cuenta de Google")
 
     #Relacionar el modelo de usuario
-    usuario = models.OneToOneField(User, models.CASCADE, related_name='alumno')
+    usuario = models.OneToOneField(User, models.CASCADE, related_name='perfil')
     #Campos del Perfil
     genero = models.CharField(max_length=1, choices=GENERO, blank=True)
     nacimiento = models.DateField(blank=True, null=True)
     avatar = models.ImageField(blank=True)
     fechaRegistro = models.DateField(default=date.today, blank=True)
     karma = models.IntegerField(default=50, validators=[MinValueValidator(0), MaxValueValidator(100)]) #Rango 0-100
-    rango = models.CharField(max_length=1, choices=RANGO, default='Estudiante')
+    rango = models.CharField(max_length=1, choices=RANGO, default='E')
     cuentaGmail = models.CharField(validators=[gmail_regex], blank=True, max_length=15)
 
     def __str__(self):
