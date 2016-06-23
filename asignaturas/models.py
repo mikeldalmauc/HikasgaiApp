@@ -109,7 +109,7 @@ class MeGustaTarea(models.Model):
     autor = models.ForeignKey(User)
     tarea = models.ForeignKey(Tarea)
     def __str__(self):
-        return self.Tarea.titulo
+        return self.tarea.titulo
 
 class Comentario(models.Model):
     contenido = models.CharField(max_length=140)
