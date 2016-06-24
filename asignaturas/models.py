@@ -71,7 +71,7 @@ class GrupoIdioma(models.Model):
 class DatosTemporales(models.Model):
     grupoIdioma = models.OneToOneField(GrupoIdioma, related_name='datostemporales')
     def __str__(self):
-        return self.grupoIdioma
+        return self.grupoIdioma.acronimoAsignatura
 
 class Grupo(models.Model):
     nombre = models.IntegerField()
@@ -83,12 +83,12 @@ class Grupo(models.Model):
     eventos = JSONField(blank=True)
     datosTemporales = models.ForeignKey(DatosTemporales)
     def __str__(self):
-        return self.nombre
+        return str(self.nombre)
 
 class Tarea(models.Model):
     descripcion = models.CharField(max_length=140)
     titulo = models.CharField(max_length=50)
-    Hora = models.TimeField(auto_now=False, blank=True)
+    hora = models.TimeField(auto_now=False, blank=True)
     puntuacion = models.IntegerField(default=0)
     grupo = models.ForeignKey(Grupo)
     autor = models.ForeignKey(User)
@@ -101,7 +101,7 @@ class ValoracionAsignatura(models.Model):
     asignatura = models.ForeignKey(Asignatura)
     autor = models.ForeignKey(User)
     def __str__(self):
-        return self.id
+        return str(self.id)
 
 
 class MeGustaTarea(models.Model):
@@ -126,7 +126,7 @@ class MeGustaComentario(models.Model):
     autor = models.ForeignKey(User)
     comentario = models.ForeignKey(Comentario)
     def __str__(self):
-        return self.comentario
+        return str(self.comentario)
 
 class Logs(models.Model):
     data = models.CharField(max_length=255)
