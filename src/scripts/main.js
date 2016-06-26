@@ -1,1 +1,4 @@
-console.log("Probando... Funciona!");
+
+var calendario = require('./calendar'); //Modulo para la gestion del calendario
+
+calendario.descargarCalendario();
