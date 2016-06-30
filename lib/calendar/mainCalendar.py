@@ -1,6 +1,10 @@
 import datetime
 from icalendar import Calendar, Event, vCalAddress, vText, vFrequency, vRecur
 import json
+
+"""
+
+"""
 def switch_dias(dia):
     """
     Funcion que hace de swicth porque no se les ocurrio hacerlo a los que crearon el lenguaje
@@ -32,13 +36,15 @@ def __eventsByType(data, cal, titulo, calendarioSemanal):
             horainicio = datetime.datetime(int(inicioSemana["anio"]), int(inicioSemana["mes"]), int(inicioSemana["dia"]), int(hInicial[0]), int(hInicial[1]), 0) #Hora a la que empieza
             horaFin = datetime.datetime(int(inicioSemana["anio"]), int(inicioSemana["mes"]), int(inicioSemana["dia"]), int(hFinal[0]), int(hFinal[1]), 0) #Hora a la que termina
             event.add('dtstart', horainicio + datetime.timedelta(days=int(dias["dia"]) - 1))
-            event.add('dtend', horainicio + datetime.timedelta(days=int(dias["dia"]) - 1))
+            event.add('dtend', horaFin + datetime.timedelta(days=int(dias["dia"]) - 1))
             event.add('summary', titulo)
 
             event.add('rrule', {'freq': 'weekly', 'count': int(rangosemanas[1]) - int(rangosemanas[0])})
             event['uid'] = str(horainicio) + '@magnasis.com'
 
+
             cal.add_component(event) #Aniado el evento al calendario
+            cal = anadirSemanaExamenes(cal)
     return cal
 
 def createCalendar(data, calendarioSemanal):
@@ -60,5 +66,5 @@ def createCalendar(data, calendarioSemanal):
         """
          Que lo gestionen los de magnasis
          """
-        print("Si te sale este mensaje es porque algo has hecho mal, tu culpa tio")
+        print("Si te sale este mensaje es porque algo has hecho mal, tu culpa ti@")
         print (str(e))

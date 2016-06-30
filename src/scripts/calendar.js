@@ -19,14 +19,17 @@ var descargarCalendario = function() {
       return textFile;
     }; //Toda esta funcion es la que se encarga de crear el fichero
 
-
+  // Se leen los campos de la pagina
   var create = document.getElementById('create'),
     textbox = document.getElementById('textbox'); //Sigo cacheando objetos
 
+
   create.addEventListener('click', function() {
+    // Se hace visible el logo de cargar
     $(loadingDiv).removeClass("hidden");
+    //
     var link = document.getElementById('downloadlink');
-    var url = "/calendario";
+    var url = "/calendario2";
     //TODO: Esto es lo que teneis que hacer:
     /* 1. La variable data tiene que ser un objeto JSON, con un atributo
     * llamado "asignaturas" que tendra un array con objetos donde ira la informacion de la asignaturas
@@ -52,16 +55,15 @@ var descargarCalendario = function() {
     *
     */
     var data = {
-      "asignaturas": [{
-        "campus": "GI",
-        "codigoGrado": "GINFOR20",
-        "codigoAsig": "25972",
-        "idioma": "es",
-        "grupo": "01"
-      }]
+      "cursoAcademico":"2016/2017",
+      "inicioCuatrimestreUno":"2016/09/05 MON",
+      "inicioCuatrimestreDos":"2017/01/24 TUE",
+      "finCuatrimestreUno":"2016/12/23 FRI",
+      "finCuatrimestreDos":"2017/05/23 WED"
     }
+
     var success = function(data) { //Si todo tira bien se ejecuta esto
-      link.href = makeTextFile(data["calendario"]);
+      link.href = makeTextFile(data);
       link.style.display = 'block';
       $(loadingDiv).addClass("hidden", 500);
     };

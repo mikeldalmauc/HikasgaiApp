@@ -4,5 +4,5 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^calendario', views.crear_calendario, name='calendario'),
+    url(r'^calendario2', views.crear_calendario2, name='calendario2'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

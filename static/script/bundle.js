@@ -1110,8 +1110,8 @@ function assert (test, message) {
   if (!test) throw new Error(message || 'Failed assertion')
 }
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/index.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer")
-},{"base64-js":2,"buffer":1,"ieee754":3,"oMfpAn":4}],2:[function(require,module,exports){
+}).call(this,require("ngpmcQ"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\gulp-browserify\\node_modules\\browserify\\node_modules\\buffer\\index.js","/..\\..\\node_modules\\gulp-browserify\\node_modules\\browserify\\node_modules\\buffer")
+},{"base64-js":2,"buffer":1,"ieee754":3,"ngpmcQ":4}],2:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
@@ -1238,8 +1238,8 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 	exports.fromByteArray = uint8ToBase64
 }(typeof exports === 'undefined' ? (this.base64js = {}) : exports))
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib")
-},{"buffer":1,"oMfpAn":4}],3:[function(require,module,exports){
+}).call(this,require("ngpmcQ"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\gulp-browserify\\node_modules\\browserify\\node_modules\\buffer\\node_modules\\base64-js\\lib\\b64.js","/..\\..\\node_modules\\gulp-browserify\\node_modules\\browserify\\node_modules\\buffer\\node_modules\\base64-js\\lib")
+},{"buffer":1,"ngpmcQ":4}],3:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
@@ -1326,8 +1326,8 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/buffer/node_modules/ieee754")
-},{"buffer":1,"oMfpAn":4}],4:[function(require,module,exports){
+}).call(this,require("ngpmcQ"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\gulp-browserify\\node_modules\\browserify\\node_modules\\buffer\\node_modules\\ieee754\\index.js","/..\\..\\node_modules\\gulp-browserify\\node_modules\\browserify\\node_modules\\buffer\\node_modules\\ieee754")
+},{"buffer":1,"ngpmcQ":4}],4:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 // shim for using process in browser
 
@@ -1393,8 +1393,8 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/process/browser.js","/../../node_modules/gulp-browserify/node_modules/browserify/node_modules/process")
-},{"buffer":1,"oMfpAn":4}],5:[function(require,module,exports){
+}).call(this,require("ngpmcQ"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\gulp-browserify\\node_modules\\browserify\\node_modules\\process\\browser.js","/..\\..\\node_modules\\gulp-browserify\\node_modules\\browserify\\node_modules\\process")
+},{"buffer":1,"ngpmcQ":4}],5:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 /*!
  * jQuery JavaScript Library v3.0.0
@@ -11434,8 +11434,8 @@ if ( !noGlobal ) {
 return jQuery;
 } ) );
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/../../node_modules/jquery/dist/jquery.js","/../../node_modules/jquery/dist")
-},{"buffer":1,"oMfpAn":4}],6:[function(require,module,exports){
+}).call(this,require("ngpmcQ"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/..\\..\\node_modules\\jquery\\dist\\jquery.js","/..\\..\\node_modules\\jquery\\dist")
+},{"buffer":1,"ngpmcQ":4}],6:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 var $ = require('jquery'); //Importo la libreria jquery
 
@@ -11458,14 +11458,17 @@ var descargarCalendario = function() {
       return textFile;
     }; //Toda esta funcion es la que se encarga de crear el fichero
 
-
+  // Se leen los campos de la pagina
   var create = document.getElementById('create'),
     textbox = document.getElementById('textbox'); //Sigo cacheando objetos
 
+
   create.addEventListener('click', function() {
+    // Se hace visible el logo de cargar
     $(loadingDiv).removeClass("hidden");
+    //
     var link = document.getElementById('downloadlink');
-    var url = "/calendario";
+    var url = "/calendario2";
     //TODO: Esto es lo que teneis que hacer:
     /* 1. La variable data tiene que ser un objeto JSON, con un atributo
     * llamado "asignaturas" que tendra un array con objetos donde ira la informacion de la asignaturas
@@ -11491,16 +11494,15 @@ var descargarCalendario = function() {
     *
     */
     var data = {
-      "asignaturas": [{
-        "campus": "GI",
-        "codigoGrado": "GINFOR20",
-        "codigoAsig": "25972",
-        "idioma": "es",
-        "grupo": "01"
-      }]
+      "cursoAcademico":"2016/2017",
+      "inicioCuatrimestreUno":"2016/09/05 MON",
+      "inicioCuatrimestreDos":"2017/01/24 TUE",
+      "finCuatrimestreUno":"2016/12/23 FRI",
+      "finCuatrimestreDos":"2017/05/23 WED"
     }
+
     var success = function(data) { //Si todo tira bien se ejecuta esto
-      link.href = makeTextFile(data["calendario"]);
+      link.href = makeTextFile(data);
       link.style.display = 'block';
       $(loadingDiv).addClass("hidden", 500);
     };
@@ -11527,13 +11529,13 @@ var descargarCalendario = function() {
 
 exports.descargarCalendario = descargarCalendario;
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/calendar.js","/")
-},{"buffer":1,"jquery":5,"oMfpAn":4}],7:[function(require,module,exports){
+}).call(this,require("ngpmcQ"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/calendar.js","/")
+},{"buffer":1,"jquery":5,"ngpmcQ":4}],7:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
-
+//
 var calendario = require('./calendar'); //Modulo para la gestion del calendario
 
 calendario.descargarCalendario();
 
-}).call(this,require("oMfpAn"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_ea1f260b.js","/")
-},{"./calendar":6,"buffer":1,"oMfpAn":4}]},{},[7])
+}).call(this,require("ngpmcQ"),typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/fake_c618cbe7.js","/")
+},{"./calendar":6,"buffer":1,"ngpmcQ":4}]},{},[7])

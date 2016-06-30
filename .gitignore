@@ -1,2 +1,5 @@
 .env
 node_modules
+static/materialize-src
+venv
+pruebaCalendarioEquipo1.JSON
